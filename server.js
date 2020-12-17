@@ -34,6 +34,7 @@ var server = http.createServer(function(request, response){
     }else if(path === '/friends.json'){
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/json;charset=utf-8')
+        response.setHeader('Access-Control-Allow-Origin','http://frank.com:9999')
         response.write(fs.readFileSync('./public/friends.json'))
         response.end()
     } else {
