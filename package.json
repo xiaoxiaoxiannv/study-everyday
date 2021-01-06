@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "typescript": "^4.1.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.1",
+    "sinon-chai": "^3.3.0"
+  },
+  "scripts": {
+    "test": "mocha deep-clone/test/*.js"
+  }
+}
